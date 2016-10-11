@@ -1,7 +1,7 @@
 #!/bin/ruby
 
 def resultado_imc(calculado)
-imc = calculado.round(2) 
+imc = calculado.round(2)
   if imc <= 16
     puts "Seu IMC: #{imc}, Magreza grave."
   elsif imc <= 17
@@ -17,14 +17,13 @@ imc = calculado.round(2)
   elsif imc <= 40
     puts "Seu IMC #{imc}, Obesidade Grau II"
   elsif imc > 40
-    puts "Seu IMC #{imc}, Obesidade Grau III (móbida)"
+    puts "Seu IMC #{imc}, Obesidade Grau III (morbida)"
   end
 end
 
 def calcula_imc(peso, altura)
     return peso/(altura*altura)
 end
-
 
 
 puts "Entre com seu peso: "
